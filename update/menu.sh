@@ -54,7 +54,7 @@ echo -e "$y-------------------------------------------------------------$wh" | l
 echo -e
 echo -e
 echo -e "$y-------------------------------------------------------------$wh" | lolcat
-echo -e "$y                     MENU ALL VPN $wh" | lolcat
+echo -e "$y                          MENU ALL VPN $wh" | lolcat
 echo -e "$y-------------------------------------------------------------$wh" | lolcat
 echo -e "$yy 01$y.  Menu SSH & OpenVPN"
 echo -e "$yy 02$y.  Menu V2ray Vmess"
