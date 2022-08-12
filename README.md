@@ -1,1 +1,1 @@
-# betasc
+#Script Edited By WaanStore
