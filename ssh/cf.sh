@@ -15,11 +15,11 @@ off='\x1b[m'
 
 clear
 apt install jq curl -y
-DOMAIN=setiawan-yntkts.cf
+DOMAIN=vpnhost.ga
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
-SUB_DOMAIN=${sub}.setiawan-yntkts.cf
-CF_ID=studiogame2323@gmail.com
-CF_KEY=0872337813bf19b3de8b9405050592553e3b3
+SUB_DOMAIN=${sub}.vpnhost.ga
+CF_ID=asinfinity321@gmail.com
+CF_KEY=8b6ee7650887c77089b43e09e644cc52a1c7b
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
