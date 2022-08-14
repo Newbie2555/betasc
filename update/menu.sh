@@ -35,7 +35,7 @@ tnggl=$(date +"%d-%B-%Y")
  swap=$( free -m | awk 'NR==4 {print $2}' )
  up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 echo -e ""
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e "⭐️ $bl  \e[36;1m• ISP Name          :\e[0m$bd $ISP"
 echo -e "⭐️ $bl  \e[36;1m• City              :\e[0m$bd $CITY"
 echo -e "⭐️ $bl  \e[36;1m• CPU Model         :\e[0m$bd$cname"
@@ -47,15 +47,15 @@ echo -e "⭐️ $mg  \e[36;1m• Hari              :\e[0m$bd $hari"
 echo -e "⭐️ $mg  \e[36;1m• Tanggal           :\e[0m$bd $tnggl"
 echo -e "⭐️ $mg  \e[36;1m• IP VPS            :\e[0m$bd $IPVPS"
 echo -e "⭐️ $mg  \e[36;1m• Domain            :\e[0m$bd $DOMAIN"
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e "$y             PREMIUM AUTO SCRIPT BY WAAN STORE" | lolcat
 echo -e "$y              Thank You For Using Our Autosc" | lolcat
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e
 echo -e
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e "$y                         MENU ALL VPN $wh" | lolcat
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e "$yy 01$y.  Menu SSH & OpenVPN"
 echo -e "$yy 02$y.  Menu V2ray Vmess"
 echo -e "$yy 03$y.  Menu Xray Vless"
@@ -67,10 +67,10 @@ echo -e "$yy 08$y.  Menu Shadowsock"
 echo -e "$yy 09$y.  Menu Shadowsock R"
 echo -e "$yy 10$y.  Menu SSTP"
 echo -e "$yy 11$y.  Menu Wireguard"
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e
 echo -e "$y                         MENU SYSTEM$wh" | lolcat
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh" | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh" | lolcat
 echo -e "$yy 12$y.  Add Or Change Subdomain Host For VPS"
 echo -e "$yy 13$y.  Change Port Of Some Service"
 echo -e "$yy 14$y.  Autobackup Data VPS"
@@ -87,7 +87,7 @@ echo -e "$yy 24$y.  Cek Status Service"
 echo -e "$yy 25$y.  Fix SSH WS Jika Erorr"
 echo -e "$yy 26$y.  Update Menu"
 echo -e "$yy 27$y.  Cert Ulang"
-echo -e "$y═════════════════════════════════════════════════════════════════════$wh"  | lolcat
+echo -e "$y════════════════════════════════════════════════════════════════$wh"  | lolcat
 read -p "Select Options[ 1 - 30 ] : " menu
 case $menu in
 1)
