@@ -62,13 +62,13 @@ echo -e  ""
 echo -e   ""
 case $menu in
 1)
-ssh
+sshovpnmenu
 ;;
 2)
-wgr
+running
 ;;
 3)
-l2tp
+addssh
 ;;
 4)
 v2raay
