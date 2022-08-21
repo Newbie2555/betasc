@@ -25,9 +25,9 @@ CITY=$(curl -s ipinfo.io/city )
 up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 tram=$( free -m | awk 'NR==2 {print $2}' )
 echo -e ""
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${CYAN}╒════════════════════════════════════════════╕\033[0m${NC}"
+echo -e "\E[41;1;39m                     ⇱ INFORMASI VPS ⇲          \E[0m"
+echo -e "${CYAN}╘════════════════════════════════════════════╛\033[0m${NC}"
 echo -e " 💠$bd ISP Name          ${color1} •${color3}$bd $ISP"
 echo -e " 💠$bd City              ${color1} •${color3}$bd $CITY"
 echo -e " 💠$bd Total RAM         ${color1} •${color3}$bd $tram MB"
