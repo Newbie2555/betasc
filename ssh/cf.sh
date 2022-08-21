@@ -15,9 +15,9 @@ off='\x1b[m'
 
 clear
 apt install jq curl -y
-DOMAIN=vpnhost.ga
+DOMAIN=myhost.tk
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
-SUB_DOMAIN=${sub}.vpnhost.ga
+SUB_DOMAIN=${sub}.myhost.tk
 CF_ID=asinfinity321@gmail.com
 CF_KEY=8b6ee7650887c77089b43e09e644cc52a1c7b
 set -euo pipefail
