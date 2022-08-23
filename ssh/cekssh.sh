@@ -33,9 +33,9 @@ if [ -e "/var/log/secure" ]; then
 fi
                 
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
-echo "----------=[ Dropbear User Login ]=-----------"; | lolcat
+echo "----------=[ Dropbear User Login ]=-----------";
 echo "ID  |  Username  |  IP Address";
-echo "----------------------------------------------"; | lolcat
+echo "----------------------------------------------";
 cat $LOG | grep -i dropbear | grep -i "Password auth succeeded" > /tmp/login-db.txt;
 for PID in "${data[@]}"
 do
