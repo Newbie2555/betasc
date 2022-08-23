@@ -33,9 +33,9 @@ if [ -e "/var/log/secure" ]; then
 fi
                 
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
-echo "----------=[ Dropbear User Login ]=-----------";
+echo "----------=[ Dropbear User Login ]=-----------" | lolcat;
 echo "ID  |  Username  |  IP Address";
-echo "----------------------------------------------";
+echo "----------------------------------------------" | lolcat;
 cat $LOG | grep -i dropbear | grep -i "Password auth succeeded" > /tmp/login-db.txt;
 for PID in "${data[@]}"
 do
@@ -66,23 +66,23 @@ do
 done
 if [ -f "/etc/openvpn/server/openvpn-tcp.log" ]; then
 echo ""
-echo "---------=[ OpenVPN TCP User Login ]=---------"; | lolcat
+echo "---------=[ OpenVPN TCP User Login ]=---------" | lolcat;
 echo "Username  |  IP Address  |  Connected";
-echo "----------------------------------------------";
+echo "----------------------------------------------" | lolcat;
         cat /etc/openvpn/server/openvpn-tcp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-tcp.txt
         cat /tmp/vpn-login-tcp.txt
 fi
-echo "----------------------------------------------"; | lolcat
+echo "----------------------------------------------" | lolcat;
 
 if [ -f "/etc/openvpn/server/openvpn-udp.log" ]; then
 echo " "
-echo "---------=[ OpenVPN UDP User Login ]=---------"; | lolcat
+echo "---------=[ OpenVPN UDP User Login ]=---------" | lolcat;
 echo "Username  |  IP Address  |  Connected";
-echo "----------------------------------------------"; | lolcat
+echo "----------------------------------------------" | lolcat;
         cat /etc/openvpn/server/openvpn-udp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-udp.txt
         cat /tmp/vpn-login-udp.txt
 fi
-echo "----------------------------------------------"; | lolcat
+echo "----------------------------------------------" | lolcat;
 echo "Script Mod By Waan"
 echo "";
 
