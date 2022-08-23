@@ -48,9 +48,9 @@ do
                 fi
 done
 echo " "
-echo "----------=[ OpenSSH User Login ]=------------"; | lolcat
+echo "----------=[ OpenSSH User Login ]=------------" | lolcat;
 echo "ID  |  Username  |  IP Address";
-echo "----------------------------------------------"; | lolcat
+echo "----------------------------------------------" | lolcat;
 cat $LOG | grep -i sshd | grep -i "Accepted password for" > /tmp/login-db.txt
 data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
