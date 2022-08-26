@@ -42,61 +42,55 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[41;1;39m                     ⇱ MENU  OPTIONS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "
-[01] SSH & OVPN               [07] TOOLS SCRIPT
-[02] V2RAY VMESS              [08] INFO AUTOSCRIPT
-[03] TROJAN GFW               [09] RUNNING SERVICE
-[04] TROJAN GO                [10] GANTI PORT SERVICE
-[05] SHADOWSOCK R             [11] INFO PORT SERVICE
-[06] SHADOWSOCK               [12] FIX SSH WS SSL"
+[01] SSH & OVPN                [07] TOOLS SCRIPT
+[02] V2RAY VMESS               [08] INFO AUTOSCRIPT
+[03] TROJAN GFW                [09] RUNNING SERVICE
+[04] TROJAN GO                 [10] GANTI PORT SERVICE
+[05] SHADOWSOCK R              [11] INFO PORT SERVICE
+[06] SHADOWSOCK                [12] FIX SSH WS SSL"
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[41;1;39m                       ⇱ WAAN STORE ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e  ""
- read -p "  Select menu 1 - 14 :  " menu
+ read -p "  Select menu 1 - 12 :  " menu
 echo -e   ""
 case $menu in
 1)
 sshovpnmenu
 ;;
 2)
-wgmenu
-;;
-3)
-pptpmenu
-;;
-4)
-l2tpmenu
-;;
-5)
 vmessmenu
 ;;
-6)
-ssrmenu
+3)
+trmenu
 ;;
-7)
-ssmenu
-;;
-8)
+4)
 trgomenu
 ;;
+5)
+ssrmenu
+;;
+6)
+ssmenu
+;;
+7)
+setmenu
+;;
+8)
+about
+;;
 9)
-trmenu
+running
 ;;
 10)
 changeport
 ;;
 11)
-running
+info
 ;;
 12)
-setmenu
-;;
-13)
-contohmenuinfo
-;;
-14)
-info
+sl-fix
 ;;
 0 | 00)
 menu
