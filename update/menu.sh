@@ -47,7 +47,7 @@ echo -e "
 [03] TROJAN GFW               [09] RUNNING SERVICE
 [04] TROJAN GO                [10] GANTI PORT SERVICE
 [05] SHADOWSOCK R             [11] INFO PORT SERVICE
-[06] SHADOWSOCK               [12] FIX SSH WS SSL
+[06] SHADOWSOCK               [12] FIX SSH WS SSL"
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[41;1;39m                       ⇱ WAAN STORE ⇲                         \E[0m"
