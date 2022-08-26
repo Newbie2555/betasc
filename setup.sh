@@ -1,4 +1,45 @@
 #!/bin/bash
+if [ "${EUID}" -ne 0 ]; then
+		echo "You need to run this script as root"
+		exit 1
+fi
+if [ "$(systemd-detect-virt)" == "openvz" ]; then
+		echo "OpenVZ is not supported"
+		exit 1
+fi
+# ==========================================
+# Color
+RED='\033[0;31m'
+NC='\033[0m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LIGHT='\033[0;37m'
+# ==========================================
+# Link Hosting Kalian Untuk Ssh Vpn
+akbarvpn="raw.githubusercontent.com/Newbie2555/betasc/main/ssh"
+# Link Hosting Kalian Untuk Sstp
+akbarvpnn="raw.githubusercontent.com/Newbie2555/betasc/main/sstp"
+# Link Hosting Kalian Untuk Ssr
+akbarvpnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ssr"
+# Link Hosting Kalian Untuk Shadowsocks
+akbarvpnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/shadowsocks"
+# Link Hosting Kalian Untuk Wireguard
+akbarvpnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/wireguard"
+# Link Hosting Kalian Untuk Xray
+akbarvpnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/xray"
+# Link Hosting Kalian Untuk Ipsec
+akbarvpnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ipsec"
+# Link Hosting Kalian Untuk Backup
+akbarvpnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/backup"
+# Link Hosting Kalian Untuk Websocket
+akbarvpnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/websocket"
+# Link Hosting Kalian Untuk Ohp
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ohp"
+
+# Getting
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -48,50 +89,6 @@ PERMISSION () {
     BURIQ
 }
 clear
-if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
-		exit 1
-fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
-		echo "OpenVZ is not supported"
-		exit 1
-fi
-# ==========================================
-# Color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
-# ==========================================
-# Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/Newbie2555/betasc/main/ssh"
-# Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/Newbie2555/betasc/main/sstp"
-# Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ssr"
-# Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/shadowsocks"
-# Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/wireguard"
-# Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/xray"
-# Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ipsec"
-# Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/backup"
-# Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/websocket"
-# Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ohp"
-
-# Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$(wget -qO- ipinfo.io/ip);
 
 rm -f setup.sh
 clear
