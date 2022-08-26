@@ -42,21 +42,9 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[41;1;39m                     ⇱ MENU  OPTIONS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "
-[${green}01${NC}]${color1} •${color3}$bd PANEL SSH & OVPN (${color2}menu-ssh${color3})
-[${green}02${NC}]${color1} •${color3}$bd PANEL WIREGUARD (${color2}menu-wireguard${color3})
-[${green}03${NC}]${color1} •${color3}$bd PANEL PPTP (${color2}menu-pptp${color3})
-[${green}04${NC}]${color1} •${color3}$bd PANEL L2TP (${color2}menu-l2tp${color3})
-[${green}05${NC}]${color1} •${color3}$bd PANEL VMESS & VLESS (${color2}menu-v2ray${color3})
-[${green}06${NC}]${color1} •${color3}$bd PANEL SHADOWSOCKS R (${color2}menu-ssr${color3})
-[${green}07${NC}]${color1} •${color3}$bd PANEL SHADOWSOCKS (${color2}menu-ss${color3})
-[${green}08${NC}]${color1} •${color3}$bd PANEL TROJAN GO (${color2}menu-trojan-go${color3})
-[${green}09${NC}]${color1} •${color3}$bd PANEL TROJAN GFW (${color2}menu-trojan-gfw${color3})
-[${green}10${NC}]${color1} •${color3}$bd GANTI PORT ALL SERVICE (${color2}menu-port${color3})
-[${green}11${NC}]${color1} •${color3}$bd CEK STATUS LAYANAN (${color2}running${color3})
-[${green}12${NC}]${color1} •${color3}$bd MENU TOOLS SCRIPT (${color2}tools${color3})
-[${green}13${NC}]${color1} •${color3}$bd MENU WEBMIN (${color2}webmin${color3})
-[${green}14${NC}]${color1} •${color3}$bd INFO SCRIPT PREMIUM (${color2}info${color3})
- 
+[01] SSH & OVPN
+[02] XRAY VMESS
+[03] XRAY TROJAN
 [${green}00${NC}]${color1} •${color3}$bd Back to exit Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
