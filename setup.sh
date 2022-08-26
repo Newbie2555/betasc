@@ -40,56 +40,27 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/websocket"
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ohp"
 
 # Getting
-dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
-#########################
-
-BURIQ () {
-    curl -sS https://raw.githubusercontent.com/WanEuy22/lock/main/ip > /root/tmp
-    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
-    for user in "${data[@]}"
-    do
-    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
-    d1=(`date -d "$exp" +%s`)
-    d2=(`date -d "$biji" +%s`)
-    exp2=$(( (d1 - d2) / 86400 ))
-    if [[ "$exp2" -le "0" ]]; then
-    echo $user > /etc/.$user.ini
-    else
-    rm -f  /etc/.$user.ini > /dev/null 2>&1
-    fi
-    done
-    rm -f  /root/tmp
-}
-# https://raw.githubusercontent.com/apih46/access/main/ip 
-MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/WanEuy22/lock/main/ip | grep $MYIP | awk '{print $2}')
-echo $Name > /usr/local/etc/.$Name.ini
-CekOne=$(cat /usr/local/etc/.$Name.ini)
-
-Bloman () {
-if [ -f "/etc/.$Name.ini" ]; then
-CekTwo=$(cat /etc/.$Name.ini)
-    if [ "$CekOne" = "$CekTwo" ]; then
-        res="Expired"
-    fi
-else
-res="Perizinan Diberikan..."
-fi
-}
-
-PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/WanEuy22/lock/main/ip | awk '{print $4}' | grep $MYIP)
-    if [ "$MYIP" = "$IZIN" ]; then
-    Bloman
-    else
-    res="Perizinan Diberikan..."
-    fi
-    BURIQ
-}
+echo -e ""
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m          ⇱ SCRIPT BY RIDWAN ⇲          \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e ""
+sleep 5
+MYIP=$(wget -qO- icanhazip.com);
+IZIN=$( curl https://myridwan.github.io/izin | grep $MYIP )
+echo "Memeriksa Hak Akses VPS..."
+if [ $MYIP = $IZIN ]; then
 clear
-
+echo -e "${CYAN}Akses Diizinkan...${off}"
+sleep 1
+else
+clear
+echo -e "${PURPLE}Akses Diblokir!${off}"
+echo "Hanya Untuk Pengguna Berbayar!"
+echo "Silahkan Hubungi Admin"
+exit 0
+fi
+clear
 rm -f setup.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
