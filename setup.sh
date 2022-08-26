@@ -42,12 +42,12 @@ akbarvpnnnnnnnnnn="raw.githubusercontent.com/Newbie2555/betasc/main/ohp"
 # Getting
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m          ⇱ SCRIPT BY RIDWAN ⇲          \E[0m"
+echo -e "\E[44;1;39m           ⇱ SCRIPT BY WAANSTORE  ⇲            \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
 sleep 5
 MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( curl https://myridwan.github.io/izin | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/WanEuy22/lock/main/ip | grep $MYIP )
 echo "Memeriksa Hak Akses VPS..."
 if [ $MYIP = $IZIN ]; then
 clear
