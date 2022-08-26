@@ -42,10 +42,12 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[41;1;39m                     ⇱ MENU  OPTIONS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "
-[01] SSH & OVPN
-[02] XRAY VMESS
-[03] XRAY TROJAN
-[${green}00${NC}]${color1} •${color3}$bd Back to exit Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
+[01] SSH & OVPN               [07] TOOLS SCRIPT
+[02] V2RAY VMESS              [08] INFO AUTOSCRIPT
+[03] TROJAN GFW               [09] RUNNING SERVICE
+[04] TROJAN GO                [10] GANTI PORT SERVICE
+[05] SHADOWSOCK R             [11] INFO PORT SERVICE
+[06] SHADOWSOCK               [12] FIX SSH WS SSL
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[41;1;39m                       ⇱ WAAN STORE ⇲                         \E[0m"
